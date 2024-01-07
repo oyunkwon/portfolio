@@ -1,0 +1,13 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url('static/background.jpg');
+    color: white;
+}
+
+.bg-custom {
+    background-image: url('/static/background.jpg');
+    background-size: cover;  /* Cover the entire space */
+    background-position: center;  /* Center the background */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+}
+
