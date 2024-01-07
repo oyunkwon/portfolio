@@ -1,13 +1,17 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
-    background-image: url('static/background.jpg');
-    color: white;
 }
 
 .bg-custom {
     background-image: url('/static/background.jpg');
-    background-size: cover;  /* Cover the entire space */
-    background-position: center;  /* Center the background */
+    background-position: right;  /* Center the background */
     background-repeat: no-repeat;  /* Do not repeat the image */
+    object-fit: contain;
 }
 
+
+.text-box {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}

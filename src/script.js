@@ -1,16 +1,38 @@
-// Function to change navbar text color on scroll
-function checkScroll() {
-    var navbar = document.getElementById('navbar'); // Replace 'navbar' with the ID or class of your navbar
-    var scrollPosition = window.scrollY;
+document.addEventListener('DOMContentLoaded', () => {
+    const text1 = document.getElementById('text1');
+    const text2 = document.getElementById('text2');
+    const text3 = document.getElementById('text3');
+    const text4 = document.getElementById('text4');
 
-    if (scrollPosition > 50) { // You can adjust '50' to the scroll position you want
-        navbar.classList.add('text-black');
-        navbar.classList.remove('text-white'); // Replace 'text-white' with the original text color class if it's different
-    } else {
-        navbar.classList.add('text-white'); // Replace 'text-white' with the original text color class
-        navbar.classList.remove('text-black');
+    let toggle = 0;
+
+    setInterval(() => {
+        if (toggle === 0) {
+            text1.style.opacity = '1';
+            text2.style.opacity = '0';
+            text3.style.opacity = '0';
+            text4.style.opacity = '0';
+            text1.textContent = 'Product Manager'; // Change the text
+        } else if (toggle === 1) {
+            text1.style.opacity = '0';
+            text2.style.opacity = '1';
+            text3.style.opacity = '0';
+            text4.style.opacity = '0';
+            text2.textContent = 'ML Engineer'; // Change the text
+        }  else if (toggle === 2) {
+            text1.style.opacity = '0';
+            text2.style.opacity = '0';
+            text3.style.opacity = '1';
+            text4.style.opacity = '0';
+            text3.textContent = 'Physicist'; // Change the text
+        }  else if (toggle === 3) {
+            text1.style.opacity = '0';
+            text2.style.opacity = '0';
+            text3.style.opacity = '0';
+            text4.style.opacity = '1';
+            text4.textContent = 'UI/UX Designer'; // Change the text
     }
-}
-
-// Add scroll event listener
-window.addEventListener('scroll', checkScroll);
+        toggle += 1
+        toggle = toggle % 4
+    }, 1000); // Adjust time for flickering speed
+});

@@ -9,47 +9,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-y-scroll">
-<script src="script.js"></script>
+<body>
+<!--<section>-->
+<!--    <img alt="" class="bg-img" src="../static/background.jpg">-->
+<!--    <div class="z-10 absolute flex items-center justify-center">-->
+<!--        <div class="w-full overflow-y-scroll">-->
+<!--            <div class="h-0.5 content-center">-->
+<!--                <div class="ml-10">-->
+<!--                    <div class="h-40"></div>-->
+<!--                    <h1 class="text-2xl font-bold text-blue-600 leading-8"> 안녕하세요, </h1>-->
+<!--                    <h1 class="text-2xl font-bold text-white leading-8"> 행동하는 몽상가 </h1>-->
+<!--                    <h1 class="text-2xl font-bold text-white leading-8"> 권오윤입니다. </h1>-->
+<!--                    <h6 class="text-center mt-6">한계의 저편에서.</h6>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-
-<div class="relative flex items-center justify-center min-h-screen">
-    <video src= "../static/nell.mp4"
-           autoplay="{true}" loop muted
-           class = "absolute z-10 w-auto h-full max-w-none">
-    </video>
-    <div class="min-h-screen w-full overflow-y-scroll">
-        <div class="h-0.5 content-center sticky top-0 z-50">
-            <nav class="flex items-center justify-between flex-wrap px-6 max-md:px-4 max-md:py-3">
-                <div class="flex items-center shrink-0 text-white mr-10 ml-2"></div>
-                <div class="w-full hidden grow md:w-auto md:flex md:items-center">
-                    <div class="text-sm grow">
-                        <div class="flex max-md:flex-col max-md:last:pb-6 md:w-fit md:flex-row md:last:pb-0">
-                            <div class="block h-full pr-4 text-lg text-phl-primary hover:text-gray-600 max-md:w-full max-md:py-3 max-md:border-b max-md:border-b-phl-primary max-md:first:mt-3 md:w-auto md:py-6 md:border-b-0 md:first:mt-0">ccc</div>
-                            <div class="block h-full pr-4 text-lg text-phl-primary hover:text-gray-600 max-md:w-full max-md:py-3 max-md:border-b max-md:border-b-phl-primary max-md:first:mt-3 md:w-auto md:py-6 md:border-b-0 md:first:mt-0">ccc</div>
-                            <div class="block h-full pr-4 text-lg text-phl-primary hover:text-gray-600 max-md:w-full max-md:py-3 max-md:border-b max-md:border-b-phl-primary max-md:first:mt-3 md:w-auto md:py-6 md:border-b-0 md:first:mt-0">ccc</div>
-                            <div class="block h-full pr-4 text-lg text-phl-primary hover:text-gray-600 max-md:w-full max-md:py-3 max-md:border-b max-md:border-b-phl-primary max-md:first:mt-3 md:w-auto md:py-6 md:border-b-0 md:first:mt-0">ccc</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#home" class="hover:bg-gray-700 p-2 text-sm font-bold text-gray-400">Home</a>
-                <a href="#news" class="hover:bg-gray-700 p-2 text-sm font-bold text-gray-400">News</a>
-                <a href="#contact" class="hover:bg-gray-700 p-2 text-sm font-bold text-gray-400">Contact</a>
-                <a href="#about" class="hover:bg-gray-700 p-2 text-sm font-bold text-gray-400">About</a>
-            </nav>
-            <div class="ml-20">
-                <div class="h-40"></div>
-                <h1 class="text-3xl font-black text-left leading-10">
-                    안녕하세요,
-                </h1>
-                <h1 class="text-3xl font-black text-left leading-10 mt-2">
-                    NELL을 좋아하는 권오윤입니다.
-                </h1>
-                <h6 class="text-center mt-6">한계의 저편에서.</h6>
-            </div>
+<!--First section-->
+<div class="h-screen" style="background-image: url('../static/background_space.jpg'); background-size: cover; padding-top:80px; background-position: center;;">
+    <div class="ml-10">
+        <h1 class="text-2xl font-bold text-white opacity-40">안녕하세요,</h1>
+        <div id="container">
+            <h1 id="text1" class="text-2xl font-bold text-white text-box">Text 1</h1>
+            <h1 id="text2" class="text-2xl font-bold text-white text-box">Text 2</h1>
+            <h1 id="text3" class="text-2xl font-bold text-white text-box">Text 3</h1>
+            <h1 id="text4" class="text-2xl font-bold text-white text-box">Text 4</h1>
         </div>
+        <br>
+        <h1 class="text-2xl font-bold text-white mt-2 opacity-40">권오윤입니다.</h1>
+        <script src="script.js"></script>
     </div>
+
 </div>
+
 <div class="bg-white min-h-screen">
     <p>More content goes here...</p>
 </div>
