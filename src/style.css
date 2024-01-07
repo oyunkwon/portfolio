@@ -21,3 +21,15 @@ body{
     opacity: 0;
     transition: opacity 0.5s;
 }
+
+p{
+    font-size: 13px;
+}
+
+@font-face {
+    font-family: "SUIT Variable", sans-serif;
+}
+
+.suit {
+    font-family: "SUIT Variable"
+}
