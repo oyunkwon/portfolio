@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             text3.style.opacity = '1';
             text4.style.opacity = '0';
             text5.style.opacity = '0';
-            text3.textContent = 'Physicist'; // Change the text
+            text3.textContent = 'Researcher'; // Change the text
         }  else if (toggle === 3) {
             text1.style.opacity = '0';
             text2.style.opacity = '0';
